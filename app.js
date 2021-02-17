@@ -273,13 +273,74 @@
 // }
 // let get = myself['cell']
 // console.log(get);
-var authors = document.getElementsByClassName('author')
-for (let i = 0; i < authors.length; i++) {
-    const element = authors[i];
-    console.log(element.innerHTML);
-    element.innerHTML = 'writer-' + (i+1)
-    element.style.backgroundColor = 'yellow';
-    element.setAttribute('title', 'hey dont go far just write books')
+// var authors = document.getElementsByClassName('author')
+// for (let i = 0; i < authors.length; i++) {
+//     const element = authors[i];
+//     console.log(element.innerHTML);
+//     element.innerHTML = 'writer-' + (i+1)
+//     element.style.backgroundColor = 'yellow';
+//     element.setAttribute('title', 'hey dont go far just write books')
     
+// }
+// document.body.style.backgroundColor = 'yellow'
+// let nums = [12, 5, 7, 8, 6, 44, 32, 77,88]
+// for (let i = 0; i < nums.length; i++) {
+//     const num = nums[i];
+//    if(num % 2 ==0){
+//   console.log(num, 'is an even number');
+//    }
+//    else{
+//        console.log(num,'is an odd number');
+//    }
+    
+// }
+// function evenify_all(nums){
+//     var result
+    
+    
+//         if(nums % 2 == 0){
+//             result= num;
+//         }
+//         else{
+//            result = nums*2;
+//         }
+//         return result
+        
+//     }
+
+// var result = evenify_all(13)
+// let square = result * result
+// console.log(square);
+// function understandingCall(name, age, task){
+//     console.log(name, 'your name')
+//     console.log(age, 'your age')
+//     task();
+
+// }
+// function washHand(){
+//     console.log('wash your hand before eating');
+// }
+// function takeShower(){
+//     console.log('take shower before eating');
+// }
+// function scrollFb(){
+//     console.log('dont listen my call just scrolling');
+// }
+// understandingCall('Kaikobad Ali', 16, washHand);
+// understandingCall('joabyed ali', 16, takeShower)
+// understandingCall('nayem', 20, scrollFb)
+// function addNumbers (num1,num2){
+//     var sum = 0;
+//     for (let i = 0; i < arguments.length; i++) {
+//         const num = arguments[i];
+//         sum = sum + num
+        
+//     }
+//     return sum
+// }
+// let result = addNumbers(3,4,5,6)
+// console.log(result);
+function handleClick(){
+    console.log('jin e narassej ettw fast ty')
 }
-document.body.style.backgroundColor = 'yellow'
+

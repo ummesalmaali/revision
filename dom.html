@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document object Model</title>
     <style>
-        article{
+        article {
             border: 2px solid tomato;
             border-radius: 20px;
             margin: 10px;
@@ -14,28 +15,47 @@
         }
     </style>
 </head>
+
 <body>
-    <main>
-        <section>
-            <h1>Exploring DOM</h1>
-            <article>
-                <h3>article-1</h3>
-                <p class="author">author-1</p>
-                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae debitis deleniti consectetur eos magni quae nobis inventore, cum temporibus dignissimos ad cumque non placeat porro unde a, possimus laboriosam totam!</p>
-            </article>
-            <article>
-                <h3>article-2</h3>
-                <p class="author">author-2</p>
-                <p class="description">Asperiores mollitia rerum animi ea sint voluptatum, modi ab, dolorem consectetur est fuga magnam? Tenetur quaerat porro dicta saepe exercitationem voluptatem accusamus maxime perspiciatis, repudiandae, recusandae ab tempora nam debitis!</p>
-            </article>
-            <article>
-                <h3>article-3</h3>
-                <p class="author">author-3</p>
-                <p class="description">Necessitatibus repudiandae incidunt quaerat voluptates aperiam id, iste impedit eius ipsam aliquam ducimus, laborum itaque debitis quibusdam! Explicabo eligendi itaque cupiditate. Harum at itaque aperiam omnis, dicta deserunt dolorum animi?</p>
-            </article>
-        </section>
-    </main>
-    
+    <div id="container">
+        <h1>My List</h1>
+        <ul id="my-list">
+            <li id="first" class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Neque, iure eligendi!</li>
+            <li class="item">Corporis, autem temporibus.</li>
+            <li class="item">Hic, nobis id?</li>
+            <li class="item">Ab, sit nostrum.</li>
+        </ul>
+        <button id="addNew">kaha ho</button>
+    </div>
+
+    <script>
+        // var items = document.getElementsByClassName('item');
+        // for (let i = 0; i < items.length; i++) {
+        //     var item = items[i];
+        //     item.addEventListener('click', function (event) {
+        //         console.log(event.target.parentNode.removeChild(event.target));
+
+        //     })
+        // }
+        document.getElementById('addNew').addEventListener('click', function (event) {
+            let itemParent = document.getElementById('my-list');
+            let newItem = document.createElement('li');
+            newItem.innerText = 'i added this for adding new brand'
+            itemParent.appendChild(newItem);
+
+        })
+    //   document.getElementById('container').addEventListener('click',function(){
+    //       console.log('checking for everyone');
+    //       event.stopImmediatePropagation()
+
+    //   })
+      document.getElementById('my-list').addEventListener('click',function(event){
+        console.log(event.target.parentNode.removeChild(event.target));
+      })
+    </script>
+
     <script src="app.js"></script>
 </body>
+
 </html>
